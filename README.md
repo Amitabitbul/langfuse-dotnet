@@ -2,6 +2,7 @@
 
 [![Langfuse.OpenTelemetry](https://img.shields.io/nuget/v/Langfuse.OpenTelemetry.svg?label=Langfuse.OpenTelemetry)](https://www.nuget.org/packages/Langfuse.OpenTelemetry/)
 [![Langfuse.Client](https://img.shields.io/nuget/v/Langfuse.Client.svg?label=Langfuse.Client)](https://www.nuget.org/packages/Langfuse.Client/)
+[![Langfuse.Core](https://img.shields.io/nuget/v/Langfuse.Core.svg?label=Langfuse.Core)](https://www.nuget.org/packages/Langfuse.Core/)
 [![Build](https://github.com/carllapierre/langfuse-otel-dotnet/actions/workflows/build.yml/badge.svg)](https://github.com/carllapierre/langfuse-otel-dotnet/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
