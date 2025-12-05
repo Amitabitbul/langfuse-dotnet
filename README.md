@@ -1,9 +1,9 @@
 # Langfuse .NET SDK (Unofficial)
 
-[![Langfuse.OpenTelemetry](https://img.shields.io/nuget/v/Langfuse.OpenTelemetry.svg?label=Langfuse.OpenTelemetry)](https://www.nuget.org/packages/Langfuse.OpenTelemetry/)
-[![Langfuse.Client](https://img.shields.io/nuget/v/Langfuse.Client.svg?label=Langfuse.Client)](https://www.nuget.org/packages/Langfuse.Client/)
-[![Langfuse.Core](https://img.shields.io/nuget/v/Langfuse.Core.svg?label=Langfuse.Core)](https://www.nuget.org/packages/Langfuse.Core/)
-[![Build](https://github.com/carllapierre/langfuse-otel-dotnet/actions/workflows/build.yml/badge.svg)](https://github.com/carllapierre/langfuse-otel-dotnet/actions/workflows/build.yml)
+[![LangfuseSharp.OpenTelemetry](https://img.shields.io/nuget/v/LangfuseSharp.OpenTelemetry.svg?label=LangfuseSharp.OpenTelemetry)](https://www.nuget.org/packages/LangfuseSharp.OpenTelemetry/)
+[![LangfuseSharp.Client](https://img.shields.io/nuget/v/LangfuseSharp.Client.svg?label=LangfuseSharp.Client)](https://www.nuget.org/packages/LangfuseSharp.Client/)
+[![LangfuseSharp.Core](https://img.shields.io/nuget/v/LangfuseSharp.Core.svg?label=LangfuseSharp.Core)](https://www.nuget.org/packages/LangfuseSharp.Core/)
+[![Build](https://github.com/Amitabitbul/langfuse-dotnet/actions/workflows/build.yml/badge.svg)](https://github.com/Amitabitbul/langfuse-dotnet/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Unofficial .NET SDK for [Langfuse](https://langfuse.com) - the open-source LLM engineering platform.
@@ -12,15 +12,15 @@ Unofficial .NET SDK for [Langfuse](https://langfuse.com) - the open-source LLM e
 
 | Package | Description | Install |
 |---------|-------------|---------|
-| **Langfuse.OpenTelemetry** | Export OTEL traces to Langfuse | `dotnet add package Langfuse.OpenTelemetry` |
-| **Langfuse.Client** | Prompt management with caching | `dotnet add package Langfuse.Client` |
-| **Langfuse.Core** | Core library with shared types and configuration | Automatically included with other packages |
+| **LangfuseSharp.OpenTelemetry** | Export OTEL traces to Langfuse | `dotnet add package LangfuseSharp.OpenTelemetry` |
+| **LangfuseSharp.Client** | Prompt management with caching | `dotnet add package LangfuseSharp.Client` |
+| **LangfuseSharp.Core** | Core library with shared types and configuration | Automatically included with other packages |
 
-> **Note:** `Langfuse.Core` is a shared library used by other Langfuse packages. When you install `Langfuse.Client` or `Langfuse.OpenTelemetry`, `Langfuse.Core` is automatically included as a dependency. You typically don't need to install it directly unless you're building custom integrations.
+> **Note:** `LangfuseSharp.Core` is a shared library used by other Langfuse packages. When you install `LangfuseSharp.Client` or `LangfuseSharp.OpenTelemetry`, `LangfuseSharp.Core` is automatically included as a dependency. You typically don't need to install it directly unless you're building custom integrations.
 
 ---
 
-## Langfuse.OpenTelemetry
+## LangfuseSharp.OpenTelemetry
 
 Export .NET OpenTelemetry traces to Langfuse. Works with any OTEL-instrumented library including Semantic Kernel.
 
@@ -28,7 +28,7 @@ Export .NET OpenTelemetry traces to Langfuse. Works with any OTEL-instrumented l
 
 **1. Install**
 ```bash
-dotnet add package Langfuse.OpenTelemetry
+dotnet add package LangfuseSharp.OpenTelemetry
 ```
 
 **2. Set environment variables**
@@ -83,7 +83,7 @@ var result = await kernel.InvokePromptAsync("Hello!");
 
 ---
 
-## Langfuse.Client
+## LangfuseSharp.Client
 
 Access Langfuse features like Prompt Management directly from .NET with built-in caching.
 
@@ -91,7 +91,7 @@ Access Langfuse features like Prompt Management directly from .NET with built-in
 
 **1. Install**
 ```bash
-dotnet add package Langfuse.Client
+dotnet add package LangfuseSharp.Client
 ```
 
 **2. Set environment variables**

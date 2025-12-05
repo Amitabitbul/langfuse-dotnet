@@ -5,12 +5,12 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PackageId>Langfuse.Client</PackageId>
+    <PackageId>LangfuseSharp.Client</PackageId>
     <Version>1.1.0</Version>
     <Description>Unofficial .NET client for Langfuse. Provides access to Langfuse features like Prompt Management, with client-side caching.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <RepositoryUrl>https://github.com/carllapierre/langfuse-otel-dotnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Amitabitbul/langfuse-dotnet</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
