@@ -1,6 +1,10 @@
 name: Publish to NuGet
 
 on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
   release:
     types: [published]
 
@@ -28,13 +32,14 @@ jobs:
     
     - name: Pack
       run: |
-        dotnet pack src/Langfuse.Client/Langfuse.Client.csproj --configuration Release --no-build --output ./artifacts
-        dotnet pack src/Langfuse.OpenTelemetry/Langfuse.OpenTelemetry.csproj --configuration Release --no-build --output ./artifacts
+        dotnet pack src/Langfuse.Core/Langfuse.Core.csproj --configuration Release --no-build --output ./nupkgs
+        dotnet pack src/Langfuse.Client/Langfuse.Client.csproj --configuration Release --no-build --output ./nupkgs
+        dotnet pack src/Langfuse.OpenTelemetry/Langfuse.OpenTelemetry.csproj --configuration Release --no-build --output ./nupkgs
     
     - name: Push to NuGet
-      run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+      run: dotnet nuget push ./nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
     
     - name: Upload Release Assets
       uses: softprops/action-gh-release@v1
       with:
-        files: ./artifacts/*.nupkg
+        files: ./nupkgs/*.nupkg

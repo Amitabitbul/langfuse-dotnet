@@ -13,6 +13,9 @@ Unofficial .NET SDK for [Langfuse](https://langfuse.com) - the open-source LLM e
 |---------|-------------|---------|
 | **Langfuse.OpenTelemetry** | Export OTEL traces to Langfuse | `dotnet add package Langfuse.OpenTelemetry` |
 | **Langfuse.Client** | Prompt management with caching | `dotnet add package Langfuse.Client` |
+| **Langfuse.Core** | Core library with shared types and configuration | Automatically included with other packages |
+
+> **Note:** `Langfuse.Core` is a shared library used by other Langfuse packages. When you install `Langfuse.Client` or `Langfuse.OpenTelemetry`, `Langfuse.Core` is automatically included as a dependency. You typically don't need to install it directly unless you're building custom integrations.
 
 ---
 

@@ -34,6 +34,7 @@ jobs:
     - name: Pack
       if: matrix.os == 'ubuntu-latest' && matrix.dotnet-version == '9.0.x'
       run: |
+        dotnet pack src/Langfuse.Core/Langfuse.Core.csproj --configuration Release --no-build --output ./artifacts
         dotnet pack src/Langfuse.Client/Langfuse.Client.csproj --configuration Release --no-build --output ./artifacts
         dotnet pack src/Langfuse.OpenTelemetry/Langfuse.OpenTelemetry.csproj --configuration Release --no-build --output ./artifacts
     
