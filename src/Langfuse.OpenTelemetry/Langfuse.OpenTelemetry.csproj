@@ -5,12 +5,12 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PackageId>Langfuse.OpenTelemetry</PackageId>
+    <PackageId>LangfuseSharp.OpenTelemetry</PackageId>
     <Version>1.1.0</Version>
     <Description>A bridge between .NET OpenTelemetry (OTEL) and Langfuse. Automatically exports OTEL traces to Langfuse with a single line of code.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <RepositoryUrl>https://github.com/carllapierre/langfuse-otel-dotnet</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Amitabitbul/langfuse-dotnet</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
