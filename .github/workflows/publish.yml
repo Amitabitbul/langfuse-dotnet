@@ -28,6 +28,7 @@ jobs:
     
     - name: Pack
       run: |
+        dotnet pack src/Langfuse.Core/Langfuse.Core.csproj --configuration Release --no-build --output ./artifacts
         dotnet pack src/Langfuse.Client/Langfuse.Client.csproj --configuration Release --no-build --output ./artifacts
         dotnet pack src/Langfuse.OpenTelemetry/Langfuse.OpenTelemetry.csproj --configuration Release --no-build --output ./artifacts
     
